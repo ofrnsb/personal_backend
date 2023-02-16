@@ -2,10 +2,12 @@ package com.mobile.DTO;
 
 public class UserData {
 
+  // nama harus sama dengan nama field di Appuser.java
+
   private String fullName;
   private String email;
   private String password;
-  private String role;
+  private String appUserRole;
 
   public String getFullName() {
     return fullName;
@@ -31,11 +33,11 @@ public class UserData {
     this.password = password;
   }
 
-  public String getRole() {
-    return role;
+  public String getAppUserRole() {
+    return appUserRole;
   }
 
-  public void setRole(String role) {
-    this.role = role;
+  public void setAppUserRole(String appUserRole) {
+    this.appUserRole = appUserRole;
   }
 }
