@@ -26,13 +26,13 @@ public class securityConfig {
     http
       .csrf()
       .disable()
-      // .authorizeHttpRequests(requests ->
-      //   requests
-      //     // .requestMatchers("/api/categories")
-
-      //     .anyRequest()
-      //     .permitAll()
-      // )
+      .authorizeHttpRequests(requests ->
+        requests
+          .requestMatchers("/login/register")
+          .permitAll()
+          .anyRequest()
+          .authenticated()
+      )
       .httpBasic()
       .and()
       .authenticationManager(authenticationManager(http));
