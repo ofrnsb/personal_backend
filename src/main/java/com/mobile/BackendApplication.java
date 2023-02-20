@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 //many to many bisa langsung menambahkan data supplier ke product
-//many to one, data catefory harus ditambahkan terlebih dahulu sebelum ditambahkan ke produk
+//many to one, data category harus ditambahkan terlebih dahulu sebelum ditambahkan ke produk
 
 @SpringBootApplication
 public class BackendApplication {
